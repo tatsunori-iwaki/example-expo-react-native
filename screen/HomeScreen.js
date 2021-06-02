@@ -16,6 +16,10 @@ export default class HomeScreen extends React.Component {
           title="Go to PieChart"
           onPress={() => this.props.navigation.navigate('PieChart')}
         />
+        <Button
+          title="Go to LineChart"
+          onPress={() => this.props.navigation.navigate('LineChart')}
+        />
       </View>
     );
   }

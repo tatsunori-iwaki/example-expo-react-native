@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from "./screen/HomeScreen";
 import DetailsScreen from "./screen/DetailsScreen";
 import PieChartScreen from "./screen/PieChartScreen";
+import LineChartScreen from "./screen/LineChartScreen";
 
 const AppContainer = createAppContainer(
   createStackNavigator(
@@ -11,6 +12,7 @@ const AppContainer = createAppContainer(
       Home: HomeScreen,
       Details: DetailsScreen,
       PieChart: PieChartScreen,
+      LineChart: LineChartScreen,
     },
     {
       initialRouteName: 'Home',
