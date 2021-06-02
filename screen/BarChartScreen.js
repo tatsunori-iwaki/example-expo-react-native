@@ -24,7 +24,7 @@ export default class BarChartScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>折線グラフ</Text>
+        <Text style={styles.text}>棒グラフ</Text>
         <BarChart
           data={data}
           width={windowWidth * 0.99}

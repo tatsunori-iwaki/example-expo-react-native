@@ -2,8 +2,15 @@ import * as React from 'react';
 import * as THREE from 'three'
 import { GLView } from 'expo-gl';
 import { Renderer } from 'expo-three';
+import OrbitControlsView from 'expo-three-orbit-controls';
 
 export default class TreeJsCubeScreen extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      camera: null
+    };
+  }
   _onGLContextCreate = async (gl) => {
     const renderer = new Renderer({ gl });
     renderer.setSize(gl.drawingBufferWidth, gl.drawingBufferHeight);
@@ -18,6 +25,10 @@ export default class TreeJsCubeScreen extends React.Component {
     scene.add(cube);
 
     camera.position.z = 5;
+    camera.lookAt(cube.position);
+    this.setState({
+      camera: camera
+    })
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -30,10 +41,12 @@ export default class TreeJsCubeScreen extends React.Component {
   };
   render() {
     return (
-      <GLView
-        style={{ flex: 1 }}
-        onContextCreate={this._onGLContextCreate}
-      />
+      <OrbitControlsView style={{ flex: 1 }} camera={this.state.camera}>
+        <GLView
+          style={{ flex: 1 }}
+          onContextCreate={this._onGLContextCreate}
+        />
+      </OrbitControlsView>
     )
   }
 }
