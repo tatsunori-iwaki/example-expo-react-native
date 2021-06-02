@@ -5,6 +5,7 @@ import HomeScreen from "./screen/HomeScreen";
 import DetailsScreen from "./screen/DetailsScreen";
 import PieChartScreen from "./screen/PieChartScreen";
 import LineChartScreen from "./screen/LineChartScreen";
+import BarChartScreen from "./screen/BarChartScreen";
 
 const AppContainer = createAppContainer(
   createStackNavigator(
@@ -13,6 +14,7 @@ const AppContainer = createAppContainer(
       Details: DetailsScreen,
       PieChart: PieChartScreen,
       LineChart: LineChartScreen,
+      BarChart: BarChartScreen,
     },
     {
       initialRouteName: 'Home',

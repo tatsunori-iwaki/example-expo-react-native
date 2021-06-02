@@ -20,6 +20,10 @@ export default class HomeScreen extends React.Component {
           title="Go to LineChart"
           onPress={() => this.props.navigation.navigate('LineChart')}
         />
+        <Button
+          title="Go to BarChartScreen"
+          onPress={() => this.props.navigation.navigate('BarChart')}
+        />
       </View>
     );
   }
