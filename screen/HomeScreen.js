@@ -8,22 +8,30 @@ export default class HomeScreen extends React.Component {
       <View style={styles.container}>
         <Text>Hello, Open up App.js to start working on your app!</Text>
         <StatusBar style="auto" />
-        <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Details')}
-        />
-        <Button
-          title="Go to PieChart"
-          onPress={() => this.props.navigation.navigate('PieChart')}
-        />
-        <Button
-          title="Go to LineChart"
-          onPress={() => this.props.navigation.navigate('LineChart')}
-        />
-        <Button
-          title="Go to BarChartScreen"
-          onPress={() => this.props.navigation.navigate('BarChart')}
-        />
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to Details"
+            onPress={() => this.props.navigation.navigate('Details')}
+          />
+        </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to PieChart"
+            onPress={() => this.props.navigation.navigate('PieChart')}
+          />
+        </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to LineChart"
+            onPress={() => this.props.navigation.navigate('LineChart')}
+          />
+        </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to BarChartScreen"
+            onPress={() => this.props.navigation.navigate('BarChart')}
+          />
+        </View>
       </View>
     );
   }
@@ -36,4 +44,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  buttonLayout: {
+    marginBottom: 10
+  }
 });
