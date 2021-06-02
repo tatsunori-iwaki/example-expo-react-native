@@ -1,22 +1,22 @@
 {
   "files": {
-    "app.js": "/static/js/app.9cf57df9.chunk.js",
-    "app.js.map": "/static/js/app.9cf57df9.chunk.js.map",
-    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
-    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.b4010663.chunk.js": "/static/js/2.b4010663.chunk.js",
-    "static/js/2.b4010663.chunk.js.map": "/static/js/2.b4010663.chunk.js.map",
-    "favicon-16.png": "/favicon-16.png",
-    "favicon-32.png": "/favicon-32.png",
-    "favicon.ico": "/favicon.ico",
-    "index.html": "/index.html",
-    "manifest.json": "/manifest.json",
-    "serve.json": "/serve.json",
-    "static/js/2.b4010663.chunk.js.LICENSE.txt": "/static/js/2.b4010663.chunk.js.LICENSE.txt"
+    "app.js": "/example-expo-react-native/static/js/app.9cf57df9.chunk.js",
+    "app.js.map": "/example-expo-react-native/static/js/app.9cf57df9.chunk.js.map",
+    "runtime~app.js": "/example-expo-react-native/static/js/runtime~app.3907797c.js",
+    "runtime~app.js.map": "/example-expo-react-native/static/js/runtime~app.3907797c.js.map",
+    "static/js/2.a3e1211d.chunk.js": "/example-expo-react-native/static/js/2.a3e1211d.chunk.js",
+    "static/js/2.a3e1211d.chunk.js.map": "/example-expo-react-native/static/js/2.a3e1211d.chunk.js.map",
+    "favicon-16.png": "/example-expo-react-native/favicon-16.png",
+    "favicon-32.png": "/example-expo-react-native/favicon-32.png",
+    "favicon.ico": "/example-expo-react-native/favicon.ico",
+    "index.html": "/example-expo-react-native/index.html",
+    "manifest.json": "/example-expo-react-native/manifest.json",
+    "serve.json": "/example-expo-react-native/serve.json",
+    "static/js/2.a3e1211d.chunk.js.LICENSE.txt": "/example-expo-react-native/static/js/2.a3e1211d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime~app.2e9f1821.js",
-    "static/js/2.b4010663.chunk.js",
+    "static/js/runtime~app.3907797c.js",
+    "static/js/2.a3e1211d.chunk.js",
     "static/js/app.9cf57df9.chunk.js"
   ]
 }
