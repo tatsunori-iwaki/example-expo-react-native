@@ -1,11 +1,14 @@
 {
+  "homepage": "https://tatsunori-iwaki.github.io/example-expo-react-native",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "predeploy": "expo build:web --no-pwa",
+    "deploy": "gh-pages -d web-build"
   },
   "dependencies": {
     "expo": "~41.0.1",
@@ -13,6 +16,7 @@
     "expo-status-bar": "~1.0.4",
     "expo-three": "^5.7.0",
     "expo-three-orbit-controls": "^2.0.0",
+    "gh-pages": "^3.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",

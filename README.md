@@ -1,23 +1,23 @@
+<h1 align="center">
+  <br>
+  <img src="./docs/icon.png"alt="Markdownify" width="200">
+  <br>
+  Expo react native, chart-kit, three-js examples.
+  <br>
+</h1>
+<h4 align="center">
+  <br>Cross-platform. Expo is a service that supports the build and development of React Native.
+  <br>Three.js is a JavaScript library that makes it easy to create 3D (WebGL) content.
+  <br>Graphs can be easily implemented using react-native-chart-kit.
+  <br>Here's a simple example using the JavaScript library.
+  <br>
+  <br>
+</h4>
 
-# first setup
-```
-cd ~/IdeaProjects
-expo init example-expo-react-native
-```
+# live demo
+https://tatsunori-iwaki.github.io/example-expo-react-native/
 
-# run
-```
-cd ~/IdeaProjects/example-expo-react-native
-yarn start
-```
-
-# modules
-```
-cd ~/IdeaProjects/example-expo-react-native
-expo install react-navigation react-navigation-stack react-native-gesture-handler react-native-reanimated
-expo install react-native-chart-kit react-native-svg
-expo install three expo-three expo-gl expo-three-orbit-controls
-```
-
-# wiki
-https://github.com/indiespirit/react-native-chart-kit
+# screen shots
+![](docs/screenshot-001.png)
+![](docs/screenshot-002.png)
+![](docs/screenshot-003.png)
