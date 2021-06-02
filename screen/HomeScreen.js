@@ -32,6 +32,12 @@ export default class HomeScreen extends React.Component {
             onPress={() => this.props.navigation.navigate('BarChart')}
           />
         </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to TreeJsCubeScreen"
+            onPress={() => this.props.navigation.navigate('TreeJsCube')}
+          />
+        </View>
       </View>
     );
   }

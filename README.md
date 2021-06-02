@@ -16,6 +16,7 @@ yarn start
 cd ~/IdeaProjects/example-expo-react-native
 expo install react-navigation react-navigation-stack react-native-gesture-handler react-native-reanimated
 expo install react-native-chart-kit react-native-svg
+expo install three expo-three expo-gl expo-three-orbit-controls
 ```
 
 # wiki
