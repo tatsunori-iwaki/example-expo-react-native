@@ -7,6 +7,7 @@ import PieChartScreen from "./screen/PieChartScreen";
 import LineChartScreen from "./screen/LineChartScreen";
 import BarChartScreen from "./screen/BarChartScreen";
 import TreeJsCubeScreen from "./screen/TreeJsCubeScreen";
+import OrbitControlScreen from "./screen/OrbitControlScreen";
 
 const AppContainer = createAppContainer(
   createStackNavigator(
@@ -17,6 +18,7 @@ const AppContainer = createAppContainer(
       LineChart: LineChartScreen,
       BarChart: BarChartScreen,
       TreeJsCube: TreeJsCubeScreen,
+      OrbitControl: OrbitControlScreen,
     },
     {
       initialRouteName: 'Home',

@@ -38,6 +38,12 @@ export default class HomeScreen extends React.Component {
             onPress={() => this.props.navigation.navigate('TreeJsCube')}
           />
         </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to OrbitControlScreen"
+            onPress={() => this.props.navigation.navigate('OrbitControl')}
+          />
+        </View>
       </View>
     );
   }
