@@ -4,6 +4,12 @@ import { GLView } from 'expo-gl';
 import { Renderer, TextureLoader } from 'expo-three';
 import OrbitControlsView from 'expo-three-orbit-controls';
 import texturesHardWood2Diffuse from '../public/textures/hardwood2_diffuse.jpg'
+import texturesSkyNx from '../public/textures/skybox/nx.jpg'
+import texturesSkyNy from '../public/textures/skybox/ny.jpg'
+import texturesSkyNz from '../public/textures/skybox/nz.jpg'
+import texturesSkyPx from '../public/textures/skybox/px.jpg'
+import texturesSkyPy from '../public/textures/skybox/py.jpg'
+import texturesSkyPz from '../public/textures/skybox/pz.jpg'
 
 export default class OrbitControlScreen extends React.Component {
   constructor(props) {
@@ -15,6 +21,17 @@ export default class OrbitControlScreen extends React.Component {
   _onGLContextCreate = async (gl) => {
     const renderer = new Renderer({ gl });
     renderer.setSize(gl.drawingBufferWidth, gl.drawingBufferHeight);
+
+    const skybox = [
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyNx) }),
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyPx) }),
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyPy) }),
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyNy) }),
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyNz) }),
+      new THREE.MeshBasicMaterial({ map: new TextureLoader().load(texturesSkyPz) })
+    ];
+    for (let i = 0; i < 6; i++)
+      skybox[i].side = THREE.BackSide;
 
     const textureLoader = new TextureLoader();
     const floorMat = new THREE.MeshStandardMaterial(
@@ -31,6 +48,10 @@ export default class OrbitControlScreen extends React.Component {
     });
 
     const scene = new THREE.Scene();
+    const skyboxGeometry = new THREE.BoxGeometry(1000, 1000, 1000);
+    const skyboxMesh = new THREE.Mesh(skyboxGeometry, skybox);
+    scene.add(skyboxMesh);
+
     const floorGeometry = new THREE.PlaneGeometry(20, 20);
     const floorMesh = new THREE.Mesh(floorGeometry, floorMat);
     floorMesh.receiveShadow = true;
