@@ -18,6 +18,7 @@ expo install react-navigation react-navigation-stack react-native-gesture-handle
 expo install react-native-chart-kit react-native-svg
 expo install three expo-three expo-gl expo-three-orbit-controls
 expo install gh-pages
+expo install react-native-webview
 ```
 
 # wiki

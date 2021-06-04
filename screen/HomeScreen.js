@@ -44,6 +44,12 @@ export default class HomeScreen extends React.Component {
             onPress={() => this.props.navigation.navigate('OrbitControl')}
           />
         </View>
+        <View style={styles.buttonLayout}>
+          <Button
+            title="Go to WebViewScreen"
+            onPress={() => this.props.navigation.navigate('WebView')}
+          />
+        </View>
       </View>
     );
   }
