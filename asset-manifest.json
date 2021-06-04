@@ -1,17 +1,17 @@
 {
   "files": {
-    "app.js": "/example-expo-react-native/static/js/app.c364a128.chunk.js",
-    "app.js.map": "/example-expo-react-native/static/js/app.c364a128.chunk.js.map",
+    "app.js": "/example-expo-react-native/static/js/app.c3c85e7d.chunk.js",
+    "app.js.map": "/example-expo-react-native/static/js/app.c3c85e7d.chunk.js.map",
     "runtime~app.js": "/example-expo-react-native/static/js/runtime~app.3907797c.js",
     "runtime~app.js.map": "/example-expo-react-native/static/js/runtime~app.3907797c.js.map",
-    "static/js/2.a6c5d6bc.chunk.js": "/example-expo-react-native/static/js/2.a6c5d6bc.chunk.js",
-    "static/js/2.a6c5d6bc.chunk.js.map": "/example-expo-react-native/static/js/2.a6c5d6bc.chunk.js.map",
+    "static/js/2.85bfd8b8.chunk.js": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js",
+    "static/js/2.85bfd8b8.chunk.js.map": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js.map",
     "favicon-16.png": "/example-expo-react-native/favicon-16.png",
     "favicon-32.png": "/example-expo-react-native/favicon-32.png",
     "favicon.ico": "/example-expo-react-native/favicon.ico",
     "index.html": "/example-expo-react-native/index.html",
     "serve.json": "/example-expo-react-native/serve.json",
-    "static/js/2.a6c5d6bc.chunk.js.LICENSE.txt": "/example-expo-react-native/static/js/2.a6c5d6bc.chunk.js.LICENSE.txt",
+    "static/js/2.85bfd8b8.chunk.js.LICENSE.txt": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js.LICENSE.txt",
     "static/media/hardwood2_diffuse.jpg": "/example-expo-react-native/static/media/hardwood2_diffuse.e765a9c5.jpg",
     "static/media/nx.jpg": "/example-expo-react-native/static/media/nx.948f02ac.jpg",
     "static/media/ny.jpg": "/example-expo-react-native/static/media/ny.0d38faac.jpg",
@@ -22,7 +22,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.3907797c.js",
-    "static/js/2.a6c5d6bc.chunk.js",
-    "static/js/app.c364a128.chunk.js"
+    "static/js/2.85bfd8b8.chunk.js",
+    "static/js/app.c3c85e7d.chunk.js"
   ]
 }
