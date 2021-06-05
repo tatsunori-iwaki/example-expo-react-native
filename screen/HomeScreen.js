@@ -1,55 +1,59 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button, FlatList } from 'react-native';
 
+const DATA = [
+  {
+    id: 'Details',
+    title: 'sandbox',
+  },
+  {
+    id: 'PieChart',
+    title: 'PieChart',
+  },
+  {
+    id: 'LineChart',
+    title: 'LineChart',
+  },
+  {
+    id: 'BarChart',
+    title: 'BarChart',
+  },
+  {
+    id: 'TreeJsCube',
+    title: 'TreeJsCube',
+  },
+  {
+    id: 'OrbitControl',
+    title: 'OrbitControl',
+  },
+  {
+    id: 'WebView',
+    title: 'WebView',
+  },
+];
 export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello, Open up App.js to start working on your app!</Text>
         <StatusBar style="auto" />
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to Details"
-            onPress={() => this.props.navigation.navigate('Details')}
-          />
+        <View>
+          <Text>Hello, Open up App.js to start working on your app!</Text>
         </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to PieChart"
-            onPress={() => this.props.navigation.navigate('PieChart')}
+        <ScrollView>
+          <FlatList
+            data={DATA}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
+              <View style={styles.buttonLayout}>
+                <Button
+                  title={item.title}
+                  onPress={() => this.props.navigation.navigate(item.id)}
+                />
+              </View>
+            )}
           />
-        </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to LineChart"
-            onPress={() => this.props.navigation.navigate('LineChart')}
-          />
-        </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to BarChartScreen"
-            onPress={() => this.props.navigation.navigate('BarChart')}
-          />
-        </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to TreeJsCubeScreen"
-            onPress={() => this.props.navigation.navigate('TreeJsCube')}
-          />
-        </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to OrbitControlScreen"
-            onPress={() => this.props.navigation.navigate('OrbitControl')}
-          />
-        </View>
-        <View style={styles.buttonLayout}>
-          <Button
-            title="Go to WebViewScreen"
-            onPress={() => this.props.navigation.navigate('WebView')}
-          />
-        </View>
+        </ScrollView>
       </View>
     );
   }
