@@ -1,35 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button, FlatList, Dimensions, Image } from 'react-native';
 
+const ITEM_WIDTH = Dimensions.get('window').width;
 const DATA = [
   {
     id: 'Details',
     title: 'sandbox',
-  },
-  {
-    id: 'PieChart',
-    title: 'PieChart',
-  },
-  {
-    id: 'LineChart',
-    title: 'LineChart',
-  },
-  {
-    id: 'BarChart',
-    title: 'BarChart',
-  },
-  {
-    id: 'TreeJsCube',
-    title: 'TreeJsCube',
-  },
-  {
-    id: 'OrbitControl',
-    title: 'OrbitControl',
+    thumbnail: require('../public/thumbnail/Details.png'),
   },
   {
     id: 'WebView',
     title: 'WebView',
+    thumbnail: require('../public/thumbnail/WebView.png'),
+  },
+  {
+    id: 'TreeJsCube',
+    title: 'TreeJsCube',
+    thumbnail: require('../public/thumbnail/TreeJsCube.png'),
+  },
+  {
+    id: 'OrbitControl',
+    title: 'OrbitControl',
+    thumbnail: require('../public/thumbnail/OrbitControl.png'),
+  },
+  {
+    id: 'PieChart',
+    title: 'PieChart',
+    thumbnail: require('../public/thumbnail/PieChart.png'),
+  },
+  {
+    id: 'LineChart',
+    title: 'LineChart',
+    thumbnail: require('../public/thumbnail/LineChart.png'),
+  },
+  {
+    id: 'BarChart',
+    title: 'BarChart',
+    thumbnail: require('../public/thumbnail/BarChart.png'),
   },
 ];
 export default class HomeScreen extends React.Component {
@@ -44,8 +52,13 @@ export default class HomeScreen extends React.Component {
           <FlatList
             data={DATA}
             keyExtractor={(item) => item.id.toString()}
+            numColumns={3}
             renderItem={({ item }) => (
               <View style={styles.buttonLayout}>
+                <Image
+                  source={{ uri: item.thumbnail }}
+                  style={styles.imageStyle}
+                />
                 <Button
                   title={item.title}
                   onPress={() => this.props.navigation.navigate(item.id)}
@@ -68,5 +81,12 @@ const styles = StyleSheet.create({
   },
   buttonLayout: {
     marginBottom: 10
+  },
+  imageStyle: {
+    width: ITEM_WIDTH / 3,
+    height: ITEM_WIDTH / 3,
+    resizeMode: 'cover',
+    borderWidth: 1,
+    borderColor: "#333"
   }
 });
