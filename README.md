@@ -18,6 +18,7 @@
 https://tatsunori-iwaki.github.io/example-expo-react-native/
 
 # screen shots
+![](docs/screenshot-000.png)
 ![](docs/screenshot-001.png)
 ![](docs/screenshot-002.png)
 ![](docs/screenshot-003.png)

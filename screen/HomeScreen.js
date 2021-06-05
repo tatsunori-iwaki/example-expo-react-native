@@ -1,44 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button, FlatList, Dimensions, Image } from 'react-native';
+import thumbnailDetails from '../public/thumbnail/details.png'
+import thumbnailWebView from '../public/thumbnail/webView.png'
+import thumbnailTreeJsCube from '../public/thumbnail/treeJsCube.png'
+import thumbnailOrbitControl from '../public/thumbnail/orbitControl.png'
+import thumbnailPieChart from '../public/thumbnail/pieChart.png'
+import thumbnailLineChart from '../public/thumbnail/lineChart.png'
+import thumbnailBarChart from '../public/thumbnail/barChart.png'
 
 const ITEM_WIDTH = Dimensions.get('window').width;
 const DATA = [
-  {
-    id: 'Details',
-    title: 'sandbox',
-    thumbnail: require('../public/thumbnail/Details.png'),
-  },
-  {
-    id: 'WebView',
-    title: 'WebView',
-    thumbnail: require('../public/thumbnail/WebView.png'),
-  },
-  {
-    id: 'TreeJsCube',
-    title: 'TreeJsCube',
-    thumbnail: require('../public/thumbnail/TreeJsCube.png'),
-  },
-  {
-    id: 'OrbitControl',
-    title: 'OrbitControl',
-    thumbnail: require('../public/thumbnail/OrbitControl.png'),
-  },
-  {
-    id: 'PieChart',
-    title: 'PieChart',
-    thumbnail: require('../public/thumbnail/PieChart.png'),
-  },
-  {
-    id: 'LineChart',
-    title: 'LineChart',
-    thumbnail: require('../public/thumbnail/LineChart.png'),
-  },
-  {
-    id: 'BarChart',
-    title: 'BarChart',
-    thumbnail: require('../public/thumbnail/BarChart.png'),
-  },
+  { id: 'Details', title: 'sandbox', thumbnail: thumbnailDetails, },
+  { id: 'WebView', title: 'WebView', thumbnail: thumbnailWebView, },
+  { id: 'TreeJsCube', title: 'TreeJsCube', thumbnail: thumbnailTreeJsCube, },
+  { id: 'OrbitControl', title: 'OrbitControl', thumbnail: thumbnailOrbitControl, },
+  { id: 'PieChart', title: 'PieChart', thumbnail: thumbnailPieChart, },
+  { id: 'LineChart', title: 'LineChart', thumbnail: thumbnailLineChart, },
+  { id: 'BarChart', title: 'BarChart', thumbnail: thumbnailBarChart, },
 ];
 export default class HomeScreen extends React.Component {
   render() {
@@ -56,7 +35,7 @@ export default class HomeScreen extends React.Component {
             renderItem={({ item }) => (
               <View style={styles.buttonLayout}>
                 <Image
-                  source={{ uri: item.thumbnail }}
+                  source={item.thumbnail}
                   style={styles.imageStyle}
                 />
                 <Button
