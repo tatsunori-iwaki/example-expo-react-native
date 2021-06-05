@@ -1,28 +1,35 @@
 {
   "files": {
-    "app.js": "/example-expo-react-native/static/js/app.c3c85e7d.chunk.js",
-    "app.js.map": "/example-expo-react-native/static/js/app.c3c85e7d.chunk.js.map",
+    "app.js": "/example-expo-react-native/static/js/app.5062dab4.chunk.js",
+    "app.js.map": "/example-expo-react-native/static/js/app.5062dab4.chunk.js.map",
     "runtime~app.js": "/example-expo-react-native/static/js/runtime~app.3907797c.js",
     "runtime~app.js.map": "/example-expo-react-native/static/js/runtime~app.3907797c.js.map",
-    "static/js/2.85bfd8b8.chunk.js": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js",
-    "static/js/2.85bfd8b8.chunk.js.map": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js.map",
+    "static/js/2.51755bd2.chunk.js": "/example-expo-react-native/static/js/2.51755bd2.chunk.js",
+    "static/js/2.51755bd2.chunk.js.map": "/example-expo-react-native/static/js/2.51755bd2.chunk.js.map",
     "favicon-16.png": "/example-expo-react-native/favicon-16.png",
     "favicon-32.png": "/example-expo-react-native/favicon-32.png",
     "favicon.ico": "/example-expo-react-native/favicon.ico",
     "index.html": "/example-expo-react-native/index.html",
     "serve.json": "/example-expo-react-native/serve.json",
-    "static/js/2.85bfd8b8.chunk.js.LICENSE.txt": "/example-expo-react-native/static/js/2.85bfd8b8.chunk.js.LICENSE.txt",
+    "static/js/2.51755bd2.chunk.js.LICENSE.txt": "/example-expo-react-native/static/js/2.51755bd2.chunk.js.LICENSE.txt",
+    "static/media/barChart.png": "/example-expo-react-native/static/media/barChart.6d8b1f10.png",
+    "static/media/details.png": "/example-expo-react-native/static/media/details.57980b23.png",
     "static/media/hardwood2_diffuse.jpg": "/example-expo-react-native/static/media/hardwood2_diffuse.e765a9c5.jpg",
+    "static/media/lineChart.png": "/example-expo-react-native/static/media/lineChart.ea1456b1.png",
     "static/media/nx.jpg": "/example-expo-react-native/static/media/nx.948f02ac.jpg",
     "static/media/ny.jpg": "/example-expo-react-native/static/media/ny.0d38faac.jpg",
     "static/media/nz.jpg": "/example-expo-react-native/static/media/nz.6c0041d0.jpg",
+    "static/media/orbitControl.png": "/example-expo-react-native/static/media/orbitControl.7355b103.png",
+    "static/media/pieChart.png": "/example-expo-react-native/static/media/pieChart.d3481213.png",
     "static/media/px.jpg": "/example-expo-react-native/static/media/px.f128774d.jpg",
     "static/media/py.jpg": "/example-expo-react-native/static/media/py.c104947b.jpg",
-    "static/media/pz.jpg": "/example-expo-react-native/static/media/pz.a7447bb2.jpg"
+    "static/media/pz.jpg": "/example-expo-react-native/static/media/pz.a7447bb2.jpg",
+    "static/media/treeJsCube.png": "/example-expo-react-native/static/media/treeJsCube.cc787abe.png",
+    "static/media/webView.png": "/example-expo-react-native/static/media/webView.1490b055.png"
   },
   "entrypoints": [
     "static/js/runtime~app.3907797c.js",
-    "static/js/2.85bfd8b8.chunk.js",
-    "static/js/app.c3c85e7d.chunk.js"
+    "static/js/2.51755bd2.chunk.js",
+    "static/js/app.5062dab4.chunk.js"
   ]
 }
