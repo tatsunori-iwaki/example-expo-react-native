@@ -11,6 +11,7 @@ const DATA = [
   { id: 'PieChart', title: 'PieChart', thumbnail: require('../public/thumbnail/pieChart.png'), },
   { id: 'LineChart', title: 'LineChart', thumbnail: require('../public/thumbnail/lineChart.png'), },
   { id: 'BarChart', title: 'BarChart', thumbnail: require('../public/thumbnail/barChart.png'), },
+  { id: 'QrCode', title: 'QrCode', thumbnail: require('../public/thumbnail/qrCode.png'), },
 ];
 export default class HomeScreen extends React.Component {
   render() {
